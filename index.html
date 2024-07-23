@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Local and session Storage</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="mt-5">Sign Up</h1>
+        <form action="submit">
+          <h2 id="user-display" class="h5">Username</h2>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">@</span>
+            <input
+              id="user-name"
+              type="text"
+              class="form-control"
+              placeholder="Username"
+              aria-label="Username"
+              aria-describedby="addon-wrapping"
+              required
+            />
+            <button type="submit" id="sign-up" class="btn btn-outline-primary">
+              Sign Up
+            </button>
+            <button type="button" id="sign-out" class="btn btn-outline-danger">
+              Delete
+            </button>
+          </div>
+        </form>
+        <div class="mt-5 d-flex justify-content-center">
+          <button type="button" class="btn btn-primary position-relative">
+            Inbox
+            <span
+              id="notifications"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+            >
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
